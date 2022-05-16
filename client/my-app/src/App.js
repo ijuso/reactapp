@@ -8,7 +8,7 @@ function App() {
   const [userList, setUserList] = useState([])
 
   useEffect(()=> {
-    Axios.get('http://localhost:5000/api/getall').then((response) => {
+    Axios.get('https://tiny-creponne-0338d3.netlify.app/api/getall').then((response) => {
       setUserList(response.data);
     })
 
